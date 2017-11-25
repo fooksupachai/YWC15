@@ -1,0 +1,184 @@
+
+
+body {
+  font-family: 'Taviraj', serif;
+  margin:0;
+  background: #04030C;
+  color : white;
+}
+.mySlides {display:none}
+
+header {
+  background: #222222;
+  padding: 15px 0 10px 35px;
+}
+footer{
+  background: #222222;
+  padding: 3px 0 3px 35px;
+
+}
+
+
+h4{
+  text-align: center;
+  padding-top: 33px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+#top{
+    position: fixed;
+    top: 80%;
+    left: 84%;
+    z-index: 1000;
+    cursor: pointer;
+}
+#top:hover{
+    transform: scale(1.1);
+}
+#down{
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 1000;
+    cursor: pointer;
+}
+#down:hover{
+    transform: scale(1.1);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#list-box{
+  background: #04030C;
+  margin : 20px 0 0 0;
+
+
+}
+#list-box-morning{
+    float: left;
+    width: 45%;
+    height: 63%;
+    background: #04030C;
+    margin: 25px;
+    padding-left: 180px;
+}
+#list-box-afternoon{
+    float: right;
+    width: 45%;
+    height: 99%;
+    background: #04030C;
+    margin: 25px;
+    padding-right: 180px;
+}
+
+#list-box-morning-header{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+#list-box-morning-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#list-box-afternoon-header{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+#list-box-afternoon-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#search-box{
+    float: right;
+    padding: 15px 30px 10px 0;
+}
